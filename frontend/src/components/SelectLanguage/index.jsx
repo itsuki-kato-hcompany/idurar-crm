@@ -39,12 +39,14 @@ const SelectLanguage = () => {
         placeholder={translate('select language')}
         value={langCode}
         defaultOpen={false}
+        disabled={true}
         style={{
           width: isMobile ? '100px' : '130px',
           float: 'right',
           marginTop: '5px',
           cursor: 'pointer',
           direction: 'ltr',
+          // display: 'none'
         }}
         optionFilterProp="children"
         filterOption={(input, option) => (option?.label ?? '').includes(input.toLowerCase())}

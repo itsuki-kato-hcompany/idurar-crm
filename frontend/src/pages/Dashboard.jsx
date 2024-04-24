@@ -1,11 +1,11 @@
 import DashboardModule from '@/modules/DashboardModule';
 import { useQuery } from 'urql'
 const getCompanies = `
-query companies {
-  companies {
-    id
-  }
-}`;
+  query companies {
+    companies {
+      id
+    }
+  }`;
 export default function Dashboard() {
   const [result, reexecuteQuery] = useQuery({
     query: getCompanies,
