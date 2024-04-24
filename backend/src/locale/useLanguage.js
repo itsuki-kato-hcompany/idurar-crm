@@ -31,7 +31,7 @@ const getLabel = (lang, key) => {
 
 const useSelector = (lang) => {
   const filePath = `./translation/${lang}`;
-  const defaultfilePath = `./translation/en_us`;
+  const defaultfilePath = `./translation/ja_jp`;
 
   const currentTranslation = require(filePath);
 
