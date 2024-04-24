@@ -28,7 +28,7 @@ services:
       - ./frontend:/usr/src/app
       - /usr/src/app/node_modules
     ports:
-      - "3000:3000"
+      - "3100:3100"
     environment:
       - NODE_ENV=development
       - REACT_APP_API_URL=http://backend:8888/api
@@ -41,6 +41,8 @@ services:
     image: mongo
     volumes:
       - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
     networks:
       - server-mongo
 
