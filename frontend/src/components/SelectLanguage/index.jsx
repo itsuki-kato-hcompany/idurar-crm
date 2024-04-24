@@ -37,7 +37,7 @@ const SelectLanguage = () => {
       <Select
         showSearch
         placeholder={translate('select language')}
-        value={langCode}
+        value="ja_jp"
         defaultOpen={false}
         disabled={true}
         style={{
@@ -46,7 +46,6 @@ const SelectLanguage = () => {
           marginTop: '5px',
           cursor: 'pointer',
           direction: 'ltr',
-          // display: 'none'
         }}
         optionFilterProp="children"
         filterOption={(input, option) => (option?.label ?? '').includes(input.toLowerCase())}
